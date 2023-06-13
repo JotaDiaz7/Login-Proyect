@@ -1,0 +1,139 @@
+/* sm applies to x-small devices (portrait phones, less than 576px)*/
+@media (min-width: 380px){
+
+}
+
+/* md applies to small devices (landscape phones, less than 768px)*/
+@media (min-width: 767.98px) {
+    body{
+        height: 100vh;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    h1:after{
+        font-size: 2.5rem;
+    }
+    #wrap{
+        width: 80%;
+        height: 80%;
+    }
+    .icons div{
+        width: 8%;
+        height: 6vh;
+    }
+    .hold, #remember, #check_register{
+        width: 60%;
+    }
+    #first{
+        order: 1;
+    }
+    #second{
+        order: 2;
+    }
+    #submit, #submit_register, #submit_disconnect{
+        width: 20%;
+    }
+    #button_register{
+        margin: 2% 0;
+    }
+}
+
+/* lg applies to medium devices (tablets, less than 992px)*/
+@media (min-width: 991.98px) { 
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+    }
+    h1{
+        font-size: 3.5rem;
+    }
+    h1:after{
+        font-size: 3rem;
+    }
+    #first{
+        width: 40%;
+        padding: 0px;
+    }
+    .icons{
+        margin: 40px 0px;
+    }
+    #second{
+        width: 60%;
+    }
+
+    #wrap{
+        width: 70%;
+        height: 65%;
+    }
+    .icons div{
+        width: 10%;
+        height: 8vh;
+    }
+    #etiquettes{
+        height: 11%;
+    }
+    #forms{
+        width: 70%;
+        height: 89%;
+    }
+    span{
+        height: 40%;
+    }
+
+    @keyframes hide {
+        0%{
+            transform: translateX(0px);
+            filter:brightness(100%);
+            z-index: 2;
+        }
+        45%{
+            filter:brightness(100%);
+            z-index: 2;
+        }
+        50%{
+            transform: translateX(-150px);
+            filter:brightness(50%);
+            z-index: 1;
+        }
+        100%{
+            transform: translateX(0px);
+            filter:brightness(50%);
+            z-index: 1;
+        }
+    }
+    @keyframes show {
+        0%{
+            transform: translateX(0px);
+            filter:brightness(50%);
+            z-index: 1;
+        }
+        45%{
+            filter:brightness(50%);
+            z-index: 1;
+        }
+        50%{
+            transform: translateX(150px);
+            filter:brightness(100%);
+            z-index: 2;
+        }
+        100%{
+            transform: translateX(0px);
+            filter:brightness(100%);
+            z-index: 2;
+        }
+    }
+}
+
+/* xl applies to large devices (desktops, less than 1200px)*/
+@media (min-width: 1199.98px) { 
+    #etiquettes span {
+        height: 55%;
+    }
+}
+
+
+/* xx` applies to x-large devices (large desktops, less than 1400px)*/
+@media (min-width: 1600px) { 
+}

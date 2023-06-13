@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Foldit:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --font1:sans-serif;
+    --font2:'Fjalla One', sans-serif;
+    --color1: skyblue;
+    --color2:rgb(244, 200, 150);
+    --color3: rgb(168, 123, 38);
+    --color4: rgb(229, 167, 51);
+}
+body{
+    height: 130vh;
+    background: url(../media/main.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.d-none{
+    display: none !important;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#first{
+    width: 100%;
+    padding: 20px 0px;
+    order: 2;
+}
+h1{
+    display: block;
+    font-family: var(--font2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color:var(--color1);
+    border: 5px solid var(--color1);
+    padding: 10px;
+    transform: skew(10deg);
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+    transform-origin: 50% 0px 0px;  
+    margin-bottom: 20px;
+}
+h1:after{
+    font-size: 2rem;
+    font-family: var(--font2);
+    display: block;
+    content: attr(data-title);
+    color: white;
+    padding: 10px;
+    border: 5px solid white;
+    position: absolute;
+    transform: skew(-10deg) rotateX(-90deg);
+    transform-origin: 50% 0px 0px;  
+    transition: #000 0.3s ease 0s;
+}
+#title:hover h1{
+    transform: rotateX(90deg) translateY(-22px);
+}
+#title:hover h1:after {
+    transform: rotateX(90deg) translateY(-70px);
+}
+.icons{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icons div{
+    width: 12%;
+    height: 6vh;
+}
+.icons div img{
+    width: 100%;
+    height: 100%;
+    border-radius: 99px;
+}
+#tech{
+    width: 100%;
+    margin-top: 40px;
+    display: flex; 
+    justify-content: center;
+}
+h2{
+    font-family: var(--font2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    color:var(--color1);
+    transform: skew(10deg);
+}
+#second{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+}
+h3{
+    font-family: var(--font2);
+    margin-bottom: 2%;
+    font-size: 2.5rem;
+    scale: 0;
+    transition: all 0.8s ease;
+}
+#name{
+    color: var(--color1);
+}
+.h3_show{
+    transform: skew(10deg);
+    scale: 1;
+}
+#wrap{
+    width: 90%;
+    height: 90%;
+}
+#etiquettes{
+    width: 100%;
+    height: 10%;
+}
+#log{
+    margin-left: 5%;
+}
+#etiquettes span{
+    display: inline-block;
+    position: relative;
+    font-family: var(--font2);
+    width: 20%;
+    height: 46%;
+    font-size: 1.2rem;
+    background-color:var(--color2);
+    padding: 15px 0px;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+#forms{
+    position: relative;
+    width: 100%;
+    height: 89%;
+}
+#login_form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#disconnect_form{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--color2);
+    border-radius: 10px;
+    box-shadow: inset -2px -2px 5px  rgb(105, 101, 101);
+    z-index: 2;
+}
+.alert_show{
+    scale: 1 !important;
+    position: static !important;
+}
+.alert{
+    font-family: var(--font2);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    scale: 0;
+    position: absolute;
+    transition: all 0.8s ease;
+}
+.alert i{
+    padding-right: 10px;
+}
+#error, #error_register, #error_password, #error_repeat{
+    color: red;
+}
+#success_register{
+    color: green;
+}
+#register{
+    z-index: 1;
+}
+.hold{
+    background: rgba(255, 255, 255, 0.623);
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    padding: 5px 10px;
+    width: 80%;
+    margin: 3% 0;
+}
+.register_hold{
+    margin: 2% 0;
+}
+.hold input{
+    background: transparent !important;
+    border-color: transparent !important;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 10px;
+    width: 75%;
+}
+.hold input:focus{
+    background: transparent !important;
+    border-color: transparent !important;
+    box-shadow: unset !important;
+    outline: unset !important;
+}
+.hold:has(input:focus){
+    box-shadow: 0px 0px 10px var(--color3);
+}
+#remember, #check_register{
+    width: 80%;
+    margin: 2% 0;
+    font-family: var(--font1);
+}
+#button, #button_register{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    margin: 3% 0;
+}
+#submit, #submit_register, #submit_disconnect{
+    width: 25%;
+    height: 100%;
+    border: 1px solid var(--color3);
+    border-radius: 25px;
+    font-weight: bold;
+    background: var(--color4);
+    box-shadow: 2px 5px 1px rgb(51, 51, 51);
+    cursor: pointer;
+}
+#submit:focus, #submit_register:focus, #submit_disconnect:focus{
+    box-shadow: none;
+    margin-top: 6px;
+    margin-left: 3px;
+}
+.hide{
+    z-index: 1;
+    filter:brightness(50%);
+}
+.form_left{
+    animation: hide 3s ease;
+    filter:brightness(50%);
+    z-index: 1;
+}
+@keyframes hide {
+    0%{
+        transform: translateX(0px);
+        filter:brightness(100%);
+        z-index: 2;
+    }
+    45%{
+        filter:brightness(100%);
+        z-index: 2;
+    }
+    50%{
+        transform: translateX(-100px);
+        filter:brightness(50%);
+        z-index: 1;
+    }
+    100%{
+        transform: translateX(0px);
+        filter:brightness(50%);
+        z-index: 1;
+    }
+}
+.form_right{
+    animation: show 3s ease;
+    filter:brightness(100%);
+    z-index: 2;
+}
+@keyframes show {
+    0%{
+        transform: translateX(0px);
+        filter:brightness(50%);
+        z-index: 1;
+    }
+    45%{
+        filter:brightness(50%);
+        z-index: 1;
+    }
+    50%{
+        transform: translateX(100px);
+        filter:brightness(100%);
+        z-index: 2;
+    }
+    100%{
+        transform: translateX(0px);
+        filter:brightness(100%);
+        z-index: 2;
+    }
+}
