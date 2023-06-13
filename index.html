@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=overlays-content">
+    <link rel="stylesheet" href="./fonts/awesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./fonts/awesome/css/solid.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="icon" href="./media/icon.png">
+    <title>Login proyect</title>
+</head>
+<body>
+    <section id="first" class="main">
+        <section id="title">
+            <h1 data-title="Jota Díaz">Jota Díaz</h1>
+        </section>
+        <section class="icons">
+            <div><a href=""><img src="./media/git.png" alt="github" title="GitHub"></a></div>
+            <div><a href=""><img src="./media/link.png" alt="linkedin" title="Linkedin"></a></div>
+            <div><a href=""><img src="./media/insta.png" alt="instagram" title="Instagram"></a></div>
+        </section>
+        <section id="tech">
+            <h2>Technology</h2>
+        </section>
+        <section class="icons">
+            <div><img src="./media/js.png" alt="js" title="JavaScript"></div>
+            <div><img src="./media/php.png" alt="PHP" title="PHP"></div>
+            <div><img src="./media/mysql.png" alt="mysql" title="MySQL"></div>
+        </section>
+    </section>
+    <section id="second" class="main">
+        <h3>Welcome <span id="name">hola</span></h3>
+        <section id="wrap">
+            <div id="etiquettes">
+                <span id="log">Login</span>
+                <span id="reg" class="hide">Register</span>
+            </div>
+            <div id="forms">
+                <form action="" id="login" >
+                    <div id="login_form" >
+                        <p id="error" class="alert"><i class="fa-solid fa-xmark"></i>Incorrect Login</p>
+                        <div class="hold">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" placeholder="Email" name='email'>
+                        </div>
+                        <div class="hold">
+                            <i class="fa-solid fa-lock"></i>
+                            <input type="password" id="password" placeholder="Password" name='password' class="password">
+                            <i class="eye fa-solid fa-eye"></i>               
+                        </div>
+                        <div id="remember">
+                            <input type="checkbox" id="check" name="check">
+                            <label for="check">Remember me</label>
+                        </div>
+                        <div id="button">
+                            <input type="submit" id="submit" value="ENTER" name='submit'>
+                        </div> 
+                    </div>
+                    <div id="disconnect_form" class="d-none">
+                        <input type="submit" id="submit_disconnect" value="LOG OUT" name='submit_disconnect'>
+                    </div>
+                </form>
+                <form action="" id="register" >
+                    <p id="error_register" class="alert"><i class="fa-solid fa-xmark"></i>Please, fill the form correctly</p>
+                    <p id="error_password" class="alert"><i class="fa-solid fa-xmark"></i>Please, both passwords must coincide</p>
+                    <p id="error_repeat" class="alert"><i class="fa-solid fa-xmark"></i>That email is already registered</p>
+                    <p id="success_register" class="alert">Terrific! Now you can log in</p>
+                    <div class="hold register_hold">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="name_register" placeholder="Name" name='name_register'>
+                    </div>
+                    <div class="hold register_hold">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email_register" placeholder="Email" name='email_register'>
+                    </div>
+                    <div class="hold register_hold">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password_register" placeholder="Password" name='password_register' class="password">
+                        <i class="eye fa-solid fa-eye"></i>               
+                    </div>
+                    <div class="hold register_hold">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="password_register_2" placeholder="Repeat password" name='password_register_2' class="password">
+                    </div>
+                    <div id="check_register">
+                        <input type="checkbox" id="checkbox_register" name='checkbox_register' class="checkbox_register">
+                        <label for="checkbox_register">I'm over 18</label>
+                    </div>
+                    <div id="button_register">
+                        <input type="submit" id="submit_register" value="REGISTER" name='submit_register'>
+                    </div>                 
+                </form>
+            </div>
+        </section>
+    </section>
+    <script src="./js/index.js"></script>
+</body>
+</html>
