@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Volcando datos para la tabla login.users: ~12 rows (aproximadamente)
 DELETE FROM `users`;
 INSERT INTO `users` (`email`, `name`, `pass`) VALUES
-	('hola@mundo.es', 'John Doe', '81dc9bdb52d04dc20036dbd8313ed055'),
+	('hola@mundo.es', 'John Doe', '81dc9bdb52d04dc20036dbd8313ed055');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
