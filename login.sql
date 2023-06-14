@@ -26,19 +26,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Volcando datos para la tabla login.users: ~12 rows (aproximadamente)
 DELETE FROM `users`;
 INSERT INTO `users` (`email`, `name`, `pass`) VALUES
-	('carol@hola.es', 'carol', '22ac3c5a5bf0b520d281c122d1490650'),
-	('hola@mundo.com', 'jota diaz', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
 	('hola@mundo.es', 'John Doe', '81dc9bdb52d04dc20036dbd8313ed055'),
-	('jota@hola.es', 'Jota Díaz', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
-	('mari@hola.es', 'mari', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
-	('mari@mari.es', 'mari', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
-	('nena@hola.es', 'NENA', '1ce927f875864094e3906a4a0b5ece68'),
-	('paco@hola.es', 'paco', '250cf8b51c773f3f8dc8b4be867a9a02'),
-	('paula@hola.com', 'Paula', '68053af2923e00204c3ca7c6a3150cf7'),
-	('paula@hola.es', 'Paula', '68053af2923e00204c3ca7c6a3150cf7'),
-	('pepe@hola.es', 'pepe', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
-	('pepe@pepe.com', 'pepe', '2e65f2f2fdaf6c699b223c61b1b5ab89'),
-	('toni@hola.es', 'toni', '2e65f2f2fdaf6c699b223c61b1b5ab89');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
