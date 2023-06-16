@@ -4,5 +4,5 @@ Functional login and register for website developed with JS and PHP technologie 
 
 Greetings!
 
-You can check it in the url below:
+You can check it in this url:
 https://login.jotadiazweb.com/
